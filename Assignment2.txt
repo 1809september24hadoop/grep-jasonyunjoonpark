@@ -3,7 +3,7 @@
 3. grep ^[ADE]' cities.txt
 4. grep -E '\<.ar' cities.txt | wc -l
 5. grep -v '^C' cities.txt
-6. grep -E '^.{14,}' cities.txt | grep -v ' '
+6. grep -E '^[^ ]{14,}' cities.txt | grep -v ' ' 
 7. grep -i '^B' cities.txt
 8. grep -o 'd' cities.txt | wc -l
 9. grep -Ei '(.)\1$' cities.txt
